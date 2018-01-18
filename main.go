@@ -19,6 +19,8 @@ func main() {
 		fmt.Printf("SQRT of %d is %f\n", i, res)
 
 		if err != nil {
+			//when i < 0, err contains the string:
+			//"The process cannot access the file because another process has locked a portion of the file."
 			fmt.Printf("Error for finding the sqrt of %d: %v\n", i, err)
 		}
 	}
